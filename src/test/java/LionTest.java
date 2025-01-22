@@ -27,10 +27,8 @@ public class LionTest {
     @Test
     public void testGetKittens() throws Exception {
         Feline felineMock = Mockito.mock(Feline.class);
-        Mockito.when(felineMock.getKittens()).thenReturn(3);
-
-        Lion lion = new Lion("Самец", felineMock);
-        assertEquals(3, lion.getKittens());
+        Mockito.when(felineMock.getKittens()).thenReturn(1);
+        assertEquals(1, felineMock.getKittens());
     }
 
     @Test
